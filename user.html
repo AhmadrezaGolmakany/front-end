@@ -1,11 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hello user</h1>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MyProject</title>
+
+        <link rel="stylesheet"
+            href="./assest/materialize/css/materialize.min.css">
+        <link rel="stylesheet" href="./assest/Css/Style.css">
+        <link rel="stylesheet" href="./assest/Css/util.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+            rel="stylesheet">
+
+    </head>
+    <body>
+        <!-- navbr ----------star -->
+        <nav class="white z-depth-0 top_navbar ">
+            <div class="nav-wrapper">
+                <a href="#!" class="blue-text hide-on-med-and-up">User
+                    Managment</a>
+                <a href="#" data-target="mobile-demo"
+                    class="sidenav-trigger blue-text"><i
+                        class="material-icons">menu</i></a>
+                <ul class=" hide-on-med-and-down">
+                    <li><a href="/" class="blue-text">Home</a></li>
+                    <li><a href="./user.html" class="blue-text">Manage
+                            user</a></li>
+                    <li><a href="codeyad.com" class="blue-text">Codeyad</a></li>
+                    <li><a href="#" class="blue-text">Mobile</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li><div class="user-view">
+                    <div class="background ">
+                        <img class="sizefull" src="assest/imagaes/office.jpg">
+                    </div>
+                    <a><img class="circle"
+                            src="./assest/imagaes/128317154.jfif"></a>
+                    <a><span class="white-text name">Ahmadreza
+                            golmakani</span></a>
+                    <a><span
+                            class="white-text email">argolmakany@gmail.com</span></a>
+                </div></li>
+            <li><a href="#!"><i class="material-icons">link</i>my email</a></li>
+            <li><a href="https://codeyad.com"><i
+                        class="material-icons">link</i>codyad</a></li>
+            <li><div class="divider"></div></li>
+            <li><a class="subheader">Subheader</a></li>
+            <li><a class="waves-effect" href="./user.html">User
+                    Managment</a></li>
+        </ul>
+        <!-- navbar ---------------- End -->
+
+        <!-- content Section ------------- Start -->
+
+        <section id="top_actions_section " class="row m-b-5 container ">
+
+            <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2 ">
+                <button
+                    class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
+                    <i class="material-icons m-r-5">add</i>
+                    Add Users
+                </button>
+            </div>
+
+            <div class="row col s12 m9 l8 m-b-5 ">
+                <div class="input-field ">
+                    <input id="search" type="text" class="validate">
+                    <label for="search">
+                        <i class="material-icons pos-relative top-7 ">search</i>
+                        Search
+                    </label>
+                </div>
+            </div>
+
+            <div class="col l2 hide-on-med-and-down "> </div>
+
+
+       
+        </section>
+
+        <section class="user_list_section " >
+            <ul class="collapsible hide-on-med-and-up " >
+                <li class="user_list_item" >
+                    <div class="collapsible-header" >
+                        <i class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2" >arrow_drop_down_circle
+                        </i>
+                        ahmadreza golmakani
+                    </div>
+                    <div class="collapsible-body" >
+                        <div class="p-all-5" >
+                            <span class="f-bold" >UserName: </span>
+                            <span>Ahmadreza2343</span>
+                        </div>
+                        <div class="p-all-5" >
+                            <span class="f-bold" >Email: </span>
+                            <span>argolmakany@gmail.com</span>
+                        </div>
+                        <div class="p-all-5" >
+                            <span class="f-bold" >Address</span>
+                            <span>berlin - exmple street ...</span>
+                        </div>
+                        <div class="p-all-5 flex-l-m" >
+                            <span class="f-bold" >Actions :</span>
+                            <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                            <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+
+                        </div>
+                    </div>
+                </li>
+                <li class="user_list_item" >
+                    <div class="collapsible-header" >
+                        <i class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2" >arrow_drop_down_circle
+                        </i>
+                        ahmadreza golmakani
+                    </div>
+                    <div class="collapsible-body" >
+                        <div class="p-all-5" >
+                            <span class="f-bold" >UserName: </span>
+                            <span>Ahmadreza2343</span>
+                        </div>
+                        <div class="p-all-5" >
+                            <span class="f-bold" >Email: </span>
+                            <span>argolmakany@gmail.com</span>
+                        </div>
+                        <div class="p-all-5" >
+                            <span class="f-bold" >Address</span>
+                            <span>berlin - exmple street ...</span>
+                        </div>
+                        <div class="p-all-5 flex-l-m" >
+                            <span class="f-bold" >Actions :</span>
+                            <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                            <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+
+                        </div>
+                    </div>
+                </li>
+               
+            </ul>
+
+
+
+            <div class="hide-on-med-and-down show-on-medium-and-up container " >
+                <table class="highlight striped centered" >
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Name</th>
+                            <th>UserName</th>
+                            <th>Email</th>
+                            <th>Address</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6</td>
+                            <td>Ahmadreza golmakani</td>
+                            <td>Ahmadreza2343</td>
+                            <td>argolmakany@gmail.com</td>
+                            <td>berlin - exmple street ...</td>
+                            <td>
+                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
+                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+       
+
+        <!-- content Section ------------- End -->
+        <script src="./assest/materialize/js/materialize.min.js"></script>
+        <script src="./assest/Js/script.js"></script>
+        <script src="./assest/Js/usermanager.js"></script>
+
+    </body>
 </html>

@@ -1,3 +1,20 @@
-w-100{
-    width: 100% !important;
+@media(min-width:600px){
+    .top_navbar{
+        box-shadow: 0 0 50px gray !important;
+    }
+    #top_actions_section{
+        display: flex !important;
+        align-items: center !important;
+    }
 }
+
+
+.user_list_item.active .user_list_arrow_icon{
+    transform: rotate(180deg);
+}
+.user_list_item.active , .user_list_item.active .collapsible-header {
+    background-color: rgba(196, 185, 185, 0.349);
+}
+table.highlight > tbody > tr:hover {
+    background-color: rgba(124, 171, 241, 0.5);
+  }
