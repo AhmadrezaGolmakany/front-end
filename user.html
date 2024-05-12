@@ -3,26 +3,30 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MyProject</title>
+        <title>user Managment</title>
+        <link rel="icon" type="image/x-icon" href="./assest/imagaes/codeyad.png">
 
         <link rel="stylesheet"
             href="./assest/materialize/css/materialize.min.css">
+        <link rel="stylesheet"
+            href="./assest/materialize/css/materialize-rtl.css">
+
         <link rel="stylesheet" href="./assest/Css/Style.css">
         <link rel="stylesheet" href="./assest/Css/util.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
 
     </head>
-    <body>
+    <body dir="rtl" >
         <!-- navbr ----------star -->
         <nav class="white z-depth-0 top_navbar ">
             <div class="nav-wrapper">
                 <a href="#!" class="blue-text hide-on-med-and-up">User
                     Managment</a>
                 <a href="#" data-target="mobile-demo"
-                    class="sidenav-trigger blue-text"><i
+                    class= " right sidenav-trigger blue-text"><i
                         class="material-icons">menu</i></a>
-                <ul class=" hide-on-med-and-down">
+                <ul class=" dis-flex  hide-on-med-and-down">
                     <li><a href="/" class="blue-text">Home</a></li>
                     <li><a href="./user.html" class="blue-text">Manage
                             user</a></li>
@@ -44,9 +48,9 @@
                     <a><span
                             class="white-text email">argolmakany@gmail.com</span></a>
                 </div></li>
-            <li><a href="#!"><i class="material-icons">link</i>my email</a></li>
+            <li><a href="#!"><i class="   material-icons right sidenav_link_icon">link</i>my email</a></li>
             <li><a href="https://codeyad.com"><i
-                        class="material-icons">link</i>codyad</a></li>
+                        class="material-icons right sidenav_link_icon">link</i>codyad</a></li>
             <li><div class="divider"></div></li>
             <li><a class="subheader">Subheader</a></li>
             <li><a class="waves-effect" href="./user.html">User
@@ -56,10 +60,10 @@
 
         <!-- content Section ------------- Start -->
 
-        <section id="top_actions_section " class="row m-b-5 container ">
+        <section id="top_actions_section" class="row m-b-5 container">
 
             <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2 ">
-                <button
+                <button id="add_user_btn"
                     class="waves-effect waves-light btn blue darken-2 p-l-30 p-r-30 w-full rounded_pill flex-c">
                     <i class="material-icons m-r-5">add</i>
                     Add Users
@@ -78,73 +82,80 @@
 
             <div class="col l2 hide-on-med-and-down "> </div>
 
-
-       
         </section>
 
-        <section class="user_list_section " >
-            <ul class="collapsible hide-on-med-and-up " >
-                <li class="user_list_item" >
-                    <div class="collapsible-header" >
-                        <i class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2" >arrow_drop_down_circle
+        <section class="user_list_section ">
+
+            <!-- user list in mobole ------ start -->
+            <ul class="collapsible hide-on-med-and-up ">
+                <li class="user_list_item">
+                    <div class="collapsible-header">
+                        <i
+                            class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2">arrow_drop_down_circle
                         </i>
                         ahmadreza golmakani
                     </div>
-                    <div class="collapsible-body" >
-                        <div class="p-all-5" >
-                            <span class="f-bold" >UserName: </span>
+                    <div class="collapsible-body">
+                        <div class="p-all-5">
+                            <span class="f-bold">UserName: </span>
                             <span>Ahmadreza2343</span>
                         </div>
-                        <div class="p-all-5" >
-                            <span class="f-bold" >Email: </span>
+                        <div class="p-all-5">
+                            <span class="f-bold">Email: </span>
                             <span>argolmakany@gmail.com</span>
                         </div>
-                        <div class="p-all-5" >
-                            <span class="f-bold" >Address</span>
+                        <div class="p-all-5">
+                            <span class="f-bold">Address</span>
                             <span>berlin - exmple street ...</span>
                         </div>
-                        <div class="p-all-5 flex-l-m" >
-                            <span class="f-bold" >Actions :</span>
-                            <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                            <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                        <div class="p-all-5 flex-l-m">
+                            <span class="f-bold">Actions :</span>
+                            <i
+                                class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                            <i
+                                class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
 
                         </div>
                     </div>
                 </li>
-                <li class="user_list_item" >
-                    <div class="collapsible-header" >
-                        <i class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2" >arrow_drop_down_circle
+                <li class="user_list_item">
+                    <div class="collapsible-header">
+                        <i
+                            class="material-icons blue-text darken-7 user_list_arrow_icon trans-0-2">arrow_drop_down_circle
                         </i>
                         ahmadreza golmakani
                     </div>
-                    <div class="collapsible-body" >
-                        <div class="p-all-5" >
-                            <span class="f-bold" >UserName: </span>
+                    <div class="collapsible-body">
+                        <div class="p-all-5">
+                            <span class="f-bold">UserName: </span>
                             <span>Ahmadreza2343</span>
                         </div>
-                        <div class="p-all-5" >
-                            <span class="f-bold" >Email: </span>
+                        <div class="p-all-5">
+                            <span class="f-bold">Email: </span>
                             <span>argolmakany@gmail.com</span>
                         </div>
-                        <div class="p-all-5" >
-                            <span class="f-bold" >Address</span>
+                        <div class="p-all-5">
+                            <span class="f-bold">Address</span>
                             <span>berlin - exmple street ...</span>
                         </div>
-                        <div class="p-all-5 flex-l-m" >
-                            <span class="f-bold" >Actions :</span>
-                            <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                            <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                        <div class="p-all-5 flex-l-m">
+                            <span class="f-bold">Actions :</span>
+                            <i
+                                class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                            <i
+                                class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
 
                         </div>
                     </div>
                 </li>
-               
+
             </ul>
+            <!-- user list in mobile -------- End -->
 
+            <!-- user list in dekstop -------- start -->
 
-
-            <div class="hide-on-med-and-down show-on-medium-and-up container " >
-                <table class="highlight striped centered" >
+            <div class="hide-on-med-and-down show-on-medium-and-up container ">
+                <table class="highlight striped centered">
                     <thead>
                         <tr>
                             <th>#</th>
@@ -163,8 +174,10 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
 
@@ -175,8 +188,10 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
 
@@ -187,8 +202,10 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
 
@@ -199,8 +216,10 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
 
@@ -211,8 +230,10 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
 
@@ -223,16 +244,70 @@
                             <td>argolmakany@gmail.com</td>
                             <td>berlin - exmple street ...</td>
                             <td>
-                                <i class="material-icons red-text m-l-5 m-r-5  " >delete_forever</i>
-                                <i class="material-icons orange-text darken-3 m-l-5 m-r-5 " >edite</i>
+                                <i
+                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                <i
+                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
 
+            <div
+                class=" pagination_container container  p-l-9 p-r-9 p-t-15 p-b-10 flex-sb-m pos-fixed left-0 right-0 bottom-0 z-depth-4 rounded_top_30  ">
+                <div class="pagination_item_container flex-l p-l-10 flex-l-m">
+                    shiwing
+                    <span class="m-l-5 m-r-5 max-w-50">
+                        <input type="number"
+                            class="blue-text darken-2 no-border center-align m-b-0 "
+                            value="10">
+                    </span>
+                    of
+                    <span class="blue-text darken-2 m-l-5 m-r-5">100</span>
+                </div>
+
+                <div class="pagination_buttons">
+                    <i
+                        class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-light white-text rounded_pill">keyboard_arrow_right</i>
+                    <i
+                        class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-light white-text rounded_pill">keyboard_arrow_left</i>
+                    
+                </div>
+
+            </div>
+            <!-- user list in dekstop -------- End -->
+
         </section>
-       
+
+        <div class="add_user_modal_back dis-none "></div>
+        <div class="add_user_modal container rounded_top_30 trans-0-3  ">
+            <div class="row p-t-10 p-b-10 p-r-40 p-l-40 center-on-small-only ">
+                <h5>
+                    <i
+                        class="material-icons m-r-10 m-l-10 pos-relative top-3 ">person_add</i>
+                    Add User
+                </h5>
+                <form>
+                    <div class="input-field col s12">
+                        <input type="text" class="validate" id="name">
+                        <label for="name">name :</label>
+                    </div>
+                    <div class="input-field col s12">
+                        <input type="text" class="validate" id="useename">
+                        <label for="name">UserName :</label> </div>
+                    <div class="input-field col s12">
+                        <input type="email" class="validate" id="email">
+                        <label for="name">Email :</label>
+                    </div>
+
+                    <button type="button"
+                        class="waves-effect waves-light btn blue darken-1 m-t-20 m-b-10 w-full max-w-250 rounded_pill ">
+                        submit
+                    </button>
+                </form>
+            </div>
+        </div>
 
         <!-- content Section ------------- End -->
         <script src="./assest/materialize/js/materialize.min.js"></script>

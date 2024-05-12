@@ -1,20 +1,64 @@
-@media(min-width:600px){
-    .top_navbar{
-        box-shadow: 0 0 50px gray !important;
-    }
-    #top_actions_section{
-        display: flex !important;
-        align-items: center !important;
-    }
+@font-face {
+    font-family: "BYekan";
+    src: url(../Fonts/BYekan-webfont.eot) format(eot) ,
+        url(../Fonts/BYekan-webfont.ttf) format(truetype) ,
+        url(../Fonts/BYekan-webfont.woff)  format(woff) ;
+    font-weight: normal;
+    font-style: normal;
+}
+*{
+    direction: rtl;
+}
+@media (min-width: 600px) {
+  .top_navbar {
+    box-shadow: 0 0 50px gray !important;
+  }
+  #top_actions_section {
+    display: flex !important;
+    align-items: center !important;
+  }
 }
 
-
-.user_list_item.active .user_list_arrow_icon{
-    transform: rotate(180deg);
+.user_list_item.active .user_list_arrow_icon {
+  transform: rotate(180deg);
 }
-.user_list_item.active , .user_list_item.active .collapsible-header {
-    background-color: rgba(196, 185, 185, 0.349);
+.user_list_item.active,
+.user_list_item.active .collapsible-header {
+  background-color: rgba(196, 185, 185, 0.349);
 }
 table.highlight > tbody > tr:hover {
-    background-color: rgba(124, 171, 241, 0.5);
-  }
+  background-color: rgba(124, 171, 241, 0.5);
+}
+
+
+.container{
+    width: 100% !important;
+}
+
+.add_user_modal_back{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+.add_user_modal{
+    position: fixed;
+    height: 70vh;
+    background-color: white;
+    bottom: 0;
+    z-index: 1000;
+    left: 0;
+    right: 0;
+    bottom: -70vh;
+
+}
+.add_user_modal.show{
+    bottom: 0;
+    box-shadow: 0 0 10px blue ;
+}
+.sidenav_link_icon{
+    margin: 0 0 0 25px !important;
+}
