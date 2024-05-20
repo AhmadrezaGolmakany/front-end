@@ -4,7 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>user Managment</title>
-        <link rel="icon" type="image/x-icon" href="./assest/imagaes/codeyad.png">
+        <link rel="icon" type="image/x-icon"
+            href="./assest/imagaes/codeyad.png">
 
         <link rel="stylesheet"
             href="./assest/materialize/css/materialize.min.css">
@@ -15,16 +16,18 @@
         <link rel="stylesheet" href="./assest/Css/util.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
             rel="stylesheet">
+            <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
 
     </head>
-    <body dir="rtl" >
+    <body x-data="usersData">
         <!-- navbr ----------star -->
         <nav class="white z-depth-0 top_navbar ">
             <div class="nav-wrapper">
                 <a href="#!" class="blue-text hide-on-med-and-up">User
                     Managment</a>
                 <a href="#" data-target="mobile-demo"
-                    class= " right sidenav-trigger blue-text"><i
+                    class=" right sidenav-trigger blue-text"><i
                         class="material-icons">menu</i></a>
                 <ul class=" dis-flex  hide-on-med-and-down">
                     <li><a href="/" class="blue-text">Home</a></li>
@@ -48,7 +51,9 @@
                     <a><span
                             class="white-text email">argolmakany@gmail.com</span></a>
                 </div></li>
-            <li><a href="#!"><i class="   material-icons right sidenav_link_icon">link</i>my email</a></li>
+            <li><a href="#!"><i
+                        class="   material-icons right sidenav_link_icon">link</i>my
+                    email</a></li>
             <li><a href="https://codeyad.com"><i
                         class="material-icons right sidenav_link_icon">link</i>codyad</a></li>
             <li><div class="divider"></div></li>
@@ -60,7 +65,7 @@
 
         <!-- content Section ------------- Start -->
 
-        <section id="top_actions_section" class="row m-b-5 container">
+        <section id="top_actions_section" class="row m-b-5 container" >
 
             <div class="p-l-10 p-r-10 p-t-10 col s12 m3 l2 ">
                 <button id="add_user_btn"
@@ -84,7 +89,7 @@
 
         </section>
 
-        <section class="user_list_section ">
+        <section class="user_list_section " x-init="getUsers()">
 
             <!-- user list in mobole ------ start -->
             <ul class="collapsible hide-on-med-and-up ">
@@ -166,90 +171,25 @@
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td>1</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
+                    <tbody class="dekstop_table_body">
+                        <template x-for="user in users">
+                            <tr>
+                                <td x-text="user.id" ></td>
+                                <td x-text="user.name" ></td>
+                                <td x-text="user.username" ></td>
+                                <td x-text="user.email" ></td>
+                                <td x-text="user.address.city+ '-' + user.address.street +'-'+ user.address.suite + ' /  ' +user.address.zipcode  " ></td>
+                                <td>
+                                    <i
+                                        class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
+                                    <i
+                                        class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
+                                </td>
+                            </tr>
+                        </template>
+      
 
-                        <tr>
-                            <td>2</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>3</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>4</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>5</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
-
-                        <tr>
-                            <td>6</td>
-                            <td>Ahmadreza golmakani</td>
-                            <td>Ahmadreza2343</td>
-                            <td>argolmakany@gmail.com</td>
-                            <td>berlin - exmple street ...</td>
-                            <td>
-                                <i
-                                    class="material-icons red-text m-l-5 m-r-5  ">delete_forever</i>
-                                <i
-                                    class="material-icons orange-text darken-3 m-l-5 m-r-5 ">edite</i>
-                            </td>
-                        </tr>
+    
                     </tbody>
                 </table>
             </div>
@@ -272,7 +212,7 @@
                         class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-light white-text rounded_pill">keyboard_arrow_right</i>
                     <i
                         class="material-icons blue darken-2 m-l-5 m-r-5 p-l-5 p-r-5 p-t-1 p-b-3 waves-light white-text rounded_pill">keyboard_arrow_left</i>
-                    
+
                 </div>
 
             </div>
@@ -310,6 +250,12 @@
         </div>
 
         <!-- content Section ------------- End -->
+
+   
+
+
+        <script src="./assest/Js/axios.js"></script>
+        <script src="./assest/Js/alpinegsController/userscontroller.js"></script>
         <script src="./assest/materialize/js/materialize.min.js"></script>
         <script src="./assest/Js/script.js"></script>
         <script src="./assest/Js/usermanager.js"></script>
